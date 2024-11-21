@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>قائمة الكتب</title>
+
+    <link rel="stylesheet" href="text.css" />
+  </head>
+  <body style="justify-items: center; align-items: center">
+    <h1>
+      Clicks:
+      <p>0</p>
+    </h1>
+    <button>Click me!</button>
+
+    <script>
+      let clicks = 0;
+      const button = document.querySelector("button");
+
+      button.addEventListener("click", function() {
+        clicks++;
+        document.querySelector("p").innerText = clicks;
+        
+      });
+    </script>
+  </body>
+</html>
